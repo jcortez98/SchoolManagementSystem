@@ -2,7 +2,7 @@ package com.example.git.schoolmanagmentsystem.model;
 
 public class Curso {
 
-    private Long id;
+    private Integer id;
     private String nombre;
     private String descripcion;
     private Integer numeroCreditos;
@@ -11,19 +11,18 @@ public class Curso {
     public Curso() {
     }
 
-    public Curso(Long id, String nombre, String descripcion, Integer numeroCreditos, String version) {
-        this.id = id;
+    public Curso(String nombre, String descripcion, Integer numeroCreditos, String version) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.numeroCreditos = numeroCreditos;
         this.version = version;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
